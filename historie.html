@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="This is the history section for the Original Medova Tea, here you can see medova history in pictures, viewing their old advertisements">
+    <meta name="keywords" content="medova, original, tea, history, pictures, fullscreen, 1897, advertisement">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medova History - Gallery - Since 1897</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-responsive.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/main.js" defer></script>
+    <script src="js/history.js" defer></script>
+</head>
+
+<body>
+    <!--Start på main header, denne eksiterer på alle .html sider-->
+    <header>
+        <figure class="hamburger-icon">
+            <!--tre div'er jeg styler individuelt for at skabe mit ønskede design-->
+            <div class="ham-long"></div>
+            <div class="ham-medium"></div>
+            <div class="ham-short"></div>
+        </figure>
+        <figure>
+            <a href="index.html" class="logo"><img src="img/medova-logo.webp" alt="medova logo"></a>
+        </figure>
+        <figure class="shopping-cart">
+            <p class="shopping-text">0 kr.</p>
+            <a href="#"><img class="shopping-cart-icon" src="img/shopping-cart.webp" alt="shopping cart"></a>
+        </figure>
+    </header>
+    <!--Aside der er min menu, den animerere ud fra venstre side af skærmen-->
+    <aside class="hamburger-menu">
+        <section>
+            <figure class="close-bt">
+                <img src="img/close-bt.webp" alt="close button">
+            </figure>
+            <figure>
+                <a href="#" class="logo hidden"><img src="img/medova-logo.webp" alt="medova logo"></a>
+            </figure>
+            <figure>
+                <a href="https://www.instagram.com/medovadk/" target="_blank"><img src="img/insta-icon.webp"
+                        alt="instagram icon"></a>
+            </figure>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="inspiration.html">inspiration</a></li>
+                <li><a href="historie.html">historie</a></li>
+            </ul>
+        </nav>
+        <!--Min blomster dekoration, der animere ved at roterer i nederste venstre hjørne af nav-menuen-->
+        <div class="flower-wrapper">
+            <figure class="flower-decor">
+                <img src="img/flower-decor.webp" alt="flower-decoration">
+            </figure>
+        </div>
+    </aside>
+    <main class="history-main">
+        <!--min "spacer" class laver en har en højde på 5rem, der svarer til højden på min header, så mit content ikke bliver gemt bagved-->
+        <div class="spacer"></div>
+        <!--utility classes der styler h1'erne, og en "history-X" class der sørge for at skifte overskrifter på henholdvis mobil og desktop-->
+        <h1 class="std-heading-1 history-mobile">MEDOVA<br><span>HISTORIE</span></h1>
+        <h1 class="std-heading-1 history-desktop">MEDOVA<span>HISTORIE</span></h1>
+        <!--en figure der holder på responsivt grid over mine billeder-->
+        <figure class="history-grid">
+            <figure><img class="history-sm-pic1" src="img/medova-historie1.webp" alt="old medova ad"></figure>
+            <figure><img class="history-sm-pic2" src="img/medova-historie2.webp" alt="old medova ad"></figure>
+            <figure><img class="history-sm-pic3" src="img/medova-historie3.webp" alt="old medova ad"></figure>
+            <figure><img class="history-sm-pic4" src="img/medova-historie4.webp" alt="old medova ad"></figure>
+            <figure><img class="history-sm-pic5" src="img/medova-historie5.webp" alt="old medova ad"></figure>
+            <figure><img class="history-sm-pic6" src="img/medova-historie6.webp" alt="old medova ad"></figure>
+        </figure>
+        <!--div der holder på alle mine fullscreen billeder, classen "history-not-active" bliver slået til og fra med brug af js (history.js)-->
+        <div class="fullscreen-wrapper history-not-active">
+            <figure class="fullscreen-bg">
+                <figure class="close-btn-grid">
+                    <div>
+                        <!--empty div to make space for close button-->
+                    </div>
+                    <figure><img class="history-close-btn" src="img/close-bt.webp" alt="close fullscreen button">
+                    </figure>
+                </figure>
+                <figure class="history-fs-pic history-fs-pic1 history-not-active">
+                    <img class="fullscreen" src="img/medova-historie1.webp" alt="">
+                </figure>
+                <figure class="history-fs-pic history-fs-pic2 history-not-active">
+                    <img class="fullscreen" src="img/medova-historie2.webp" alt="">
+                </figure>
+                <figure class="history-fs-pic history-fs-pic3 history-not-active">
+                    <img class="fullscreen" src="img/medova-historie3.webp" alt="">
+                </figure>
+                <figure class="history-fs-pic history-fs-pic4 history-not-active">
+                    <img class="fullscreen" src="img/medova-historie4.webp" alt="">
+                </figure>
+                <figure class="history-fs-pic history-fs-pic5 history-not-active">
+                    <img class="fullscreen" src="img/medova-historie5.webp" alt="">
+                </figure>
+                <figure class="history-fs-pic history-fs-pic6 history-not-active">
+                    <img class="fullscreen" src="img/medova-historie6.webp" alt="">
+                </figure>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <!--en meget basic header, der indeholder en overskrift og tre billeder i et grid-->
+        <h4>vores forhandlere</h4>
+        <figure>
+            <img src="img/salling.webp" alt="salling logo">
+            <img src="img/coop.webp" alt="coop logo">
+            <img src="img/nemlig.webp" alt="nemlig.com logo">
+        </figure>
+    </footer>
+</body>
+
+</html>

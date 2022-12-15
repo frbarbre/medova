@@ -1,0 +1,181 @@
+
+@media screen and (min-width:680px) {
+    /*breakpoint ved 680px der sørger for at navigations menuen nu kun fylder 40% af skærmen frem for hele skærmen. Samtidig skiftes history gridet til 2 kolonner og historie h1'erne skifter.*/
+    aside {
+        width: 40%;
+    }
+
+    .history-desktop {
+        display: block;
+    }
+
+    .history-mobile {
+        display: none;
+    }
+
+    .history-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (min-width:1180px) {
+    /*nav-menuen skifter til at fylde 25%*/
+    aside {
+        width: 25%;
+    }
+
+    /*der kommer en samlet pris ved siden af kurven*/
+    .shopping-cart {
+        display: flex;
+        align-items: center;
+        column-gap: var(--xsmall-padding);
+    }
+
+    .shopping-text {
+        display: block;
+    }
+
+    /*alle font-sizes skiftes til desktop størrelse*/
+    .std-heading-1 {
+        font-size: var(--desktop-main-heading);
+    }
+
+    .std-heading-2 {
+        font-size: var(--desktop-sub-heading);
+    }
+
+    .std-button {
+        font-size: var(--desktop-button-text);
+    }
+
+    .giveaway {
+        flex-direction: row-reverse;
+        padding-inline: var(--xlarge-padding);
+    }
+
+    /*der byttes om på taske billedet i konkurrence segmentet på forsiden*/
+    .bag-mobile {
+        display: none;
+    }
+
+    .bag-desktop {
+        display: block;
+    }
+
+    /*footer*/
+
+    /*font sizes skifter, og ikonerne i footer vises på en row fremfor en column*/
+    footer {
+        margin-top: var(--xlarge-padding);
+    }
+
+    footer h4 {
+        font-size: var(--desktop-footer-heading);
+    }
+
+    footer figure {
+        flex-direction: row;
+    }
+
+    /*shop*/
+
+    .product-text {
+        font-size: var(--desktop-suggestion-price-tag);
+    }
+
+    .section-heading {
+        font-size: var(--desktop-section-heading);
+    }
+
+    /*merchandiset bliver skiftet til en at være i 1 række frem for 3 kolloner*/
+    .merch-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .product-recommended img {
+        height: 260px;
+        object-fit: cover;
+    }
+
+    .product-recommended {
+        width: 100%;
+    }
+
+    /*product*/
+
+    .price-tag {
+        font-size: var(--desktop-price-tag-heading);
+        margin-bottom: var(--large-padding);
+    }
+
+    /*inspiration*/
+
+    /*her sættes inpirations heroen op på en 2delt række hvor der ombyttes på rækkefølgen med grid-area for at teksten står på venstre side og billedet på højre.*/
+    .inspiration-hero {
+        grid-template-areas:
+            "inspi-text inspi-img";
+        max-width: max-content;
+    }
+
+    .inspiration-hero>figure {
+        grid-area: inspi-img;
+    }
+
+    .inspiration-hero div {
+        margin-block: auto;
+        grid-area: inspi-text;
+    }
+
+    .inspiration-hero h2 {
+        font-size: var(--desktop-inspiration-hero-heading);
+    }
+
+    /*her bliver de embedded instagram links sat på række fremfor kolonne*/
+    .insta-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .inspi-desktop {
+        display: block;
+    }
+
+    .inspi-mobile {
+        display: none;
+    }
+
+    /*iste*/
+
+    .recipe-step {
+        /*her sættes .recipe-steps op i række fremfor kolonne*/
+        grid-template-columns: 1fr 1fr;
+        gap: calc(var(--xlarge-padding) + var(--xlarge-padding));
+        margin-block: calc(var(--xlarge-padding) + var(--xlarge-padding));
+        max-width: max-content;
+    }
+
+    /*.recipe-reverse vender spejlvender elementerne position på desktop*/
+    .recipe-reverse article {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .recipe-step article {
+        margin-block: auto;
+    }
+
+    .recipe-step h2 {
+        font-size: var(--desktop-recipe-heading);
+    }
+
+    .recipe-step p {
+        font-size: var(--desktop-recipe-text);
+    }
+
+    /*historie*/
+
+    .history-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

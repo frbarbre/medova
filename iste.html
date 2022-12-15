@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is the ice-tea recipe section using the Original Medova Tea, here you can follow 5 easy steps and enjoy a delicius homemade ice-tea">
+    <meta name="keywords" content="medova, original, tea, ice-tea, recipe, video, steps">
+    <title>Medova Ice Tea - Recipe - Video Steps - Original Medova Tea</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-responsive.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!--Start på main header, denne eksiterer på alle .html sider-->
+    <header>
+        <figure class="hamburger-icon">
+            <!--tre div'er jeg styler individuelt for at skabe mit ønskede design-->
+            <div class="ham-long"></div>
+            <div class="ham-medium"></div>
+            <div class="ham-short"></div>
+        </figure>
+        <figure>
+            <a href="index.html" class="logo"><img src="img/medova-logo.webp" alt="medova logo"></a>
+        </figure>
+        <figure class="shopping-cart">
+            <p class="shopping-text">0 kr.</p>
+            <a href="#"><img class="shopping-cart-icon" src="img/shopping-cart.webp" alt="shopping cart"></a>
+        </figure>
+    </header>
+    <!--Aside der er min menu, den animerere ud fra venstre side af skærmen-->
+    <aside class="hamburger-menu">
+        <section>
+            <figure class="close-bt">
+                <img src="img/close-bt.webp" alt="close button">
+            </figure>
+            <figure>
+                <a href="#" class="logo hidden"><img src="img/medova-logo.webp" alt="medova logo"></a>
+            </figure>
+            <figure>
+                <a href="https://www.instagram.com/medovadk/" target="_blank"><img src="img/insta-icon.webp"
+                        alt="instagram icon"></a>
+            </figure>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="inspiration.html">inspiration</a></li>
+                <li><a href="historie.html">historie</a></li>
+            </ul>
+        </nav>
+        <!--Min blomster dekoration, der animere ved at roterer i nederste venstre hjørne af nav-menuen-->
+        <div class="flower-wrapper">
+            <figure class="flower-decor">
+                <img src="img/flower-decor.webp" alt="flower-decoration">
+            </figure>
+        </div>
+    </aside>
+    <main>
+        <!--min "spacer" class laver en har en højde på 5rem, der svarer til højden på min header, så mit content ikke bliver gemt bagved-->
+        <div class="spacer"></div>
+        <h1 class="std-heading-1">IS<span>TE</span></h1>
+        <!--figure der indeholder med opskrift-infographic-->
+        <figure class="ice-tea-infographic">
+            <img src="img/ice-tea-infographic.webp" alt="ice-tea ice-tea-infographic">
+        </figure>
+
+        <!--wrapper der indeholder alle mine "recipe-steps" der sørger for at stille alt op i et responsivt grid-->
+        <div class="recipe-wrapper">
+            <!--"recipe-step" class der indeholder overskrift og instruktioner i en article og en video i en figure -->
+            <section class="recipe-step">
+                <article>
+                    <h2>trin 1.</h2>
+                    <p>kog 0,5 liter vand i en gryde.</p>
+                </article>
+                <figure>
+                    <!--autoplay, muted, loop & playsinline sørger for at videon automatisk kører i et loop på alle platforme og browsere-->
+                    <video autoplay muted loop playsinline src="video/clip-01.mp4"></video>
+                </figure>
+            </section>
+
+            <!--classen "recipe-reverse" sørger for at vender rundt på orienteringen på video og tekst, når websitet ses på desktop-->
+            <section class="recipe-step recipe-reverse">
+                <article>
+                    <h2>trin 2.</h2>
+                    <p>find 6 medova te-poser.</p>
+                </article>
+                <figure>
+                    <video autoplay muted loop playsinline src="video/clip-02.mp4"></video>
+                </figure>
+            </section>
+
+            <section class="recipe-step">
+                <article>
+                    <h2>trin 3.</h2>
+                    <p>tag gryden af varmen og lad te
+                        poserne trække 10 minutter i vandet.</p>
+                </article>
+                <figure>
+                    <video autoplay muted loop playsinline src="video/clip-03.mp4"></video>
+                </figure>
+            </section>
+
+            <section class="recipe-step recipe-reverse">
+                <article>
+                    <h2>trin 4.</h2>
+                    <p>fjern te-poserne og hæld sukker
+                        og en halv liter koldt vand.
+                        <br><br>
+                        pisk derefter og stild i køleskabet
+                        en timestid.
+                    </p>
+                </article>
+                <figure>
+                    <video autoplay muted loop playsinline src="video/clip-04.mp4"></video>
+                </figure>
+            </section>
+
+            <section class="recipe-step">
+                <article>
+                    <h2>trin 5.</h2>
+                    <p>server afkølet, gerne med is.</p>
+                </article>
+                <figure>
+                    <video autoplay muted loop playsinline src="video/clip-05.mp4"></video>
+                </figure>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <!--en meget basic header, der indeholder en overskrift og tre billeder i et grid-->
+        <h4>vores forhandlere</h4>
+        <figure>
+            <img src="img/salling.webp" alt="salling logo">
+            <img src="img/coop.webp" alt="coop logo">
+            <img src="img/nemlig.webp" alt="nemlig.com logo">
+        </figure>
+    </footer>
+</body>
+
+</html>

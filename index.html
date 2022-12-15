@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the main site for the rebranding of the Original Meodova Tea">
+    <meta name="keywords" content="medova, original, tea, konkurrence, te, 1897, rebrand">
+    <title>Medova Tea - Merchandise - Inspiration - History</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-responsive.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+<!--Start på main header, denne eksiterer på alle .html sider-->
+    <header>
+        <figure class="hamburger-icon">
+            <!--tre div'er jeg styler individuelt for at skabe mit ønskede design-->
+            <div class="ham-long"></div>
+            <div class="ham-medium"></div>
+            <div class="ham-short"></div>
+        </figure>
+        <figure>
+            <a href="index.html" class="logo"><img src="img/medova-logo.webp" alt="medova logo"></a>
+        </figure>
+        <figure class="shopping-cart">
+            <p class="shopping-text">0 kr.</p>
+            <a href="#"><img class="shopping-cart-icon" src="img/shopping-cart.webp" alt="shopping cart"></a>
+        </figure>
+    </header>
+    <!--Aside der er min menu, den animerere ud fra venstre side af skærmen-->
+    <aside class="hamburger-menu">
+            <section>
+                <figure class="close-bt">
+                    <img src="img/close-bt.webp" alt="close button">
+                </figure>
+                <figure>
+                    <a href="#" class="logo hidden"><img src="img/medova-logo.webp" alt="medova logo"></a>
+                </figure>
+                <figure>
+                    <a href="https://www.instagram.com/medovadk/" target="_blank"><img src="img/insta-icon.webp" alt="instagram icon"></a>
+                </figure>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="shop.html">shop</a></li>
+                    <li><a href="inspiration.html">inspiration</a></li>
+                    <li><a href="historie.html">historie</a></li>
+                </ul>
+            </nav>
+            <!--Min blomster dekoration, der animere ved at roterer i nederste venstre hjørne af nav-menuen-->
+            <div class="flower-wrapper">
+                    <figure class="flower-decor">
+                        <img src="img/flower-decor.webp" alt="flower-decoration">
+                    </figure>
+            </div>
+    </aside>
+    <main>
+        <!--min "spacer" class laver en har en højde på 5rem, der svarer til højden på min header, så mit content ikke bliver gemt bagved-->
+        <div class="spacer"></div>
+        <!--min main hero der indeholder overskrifter, en knap og mit produkt/hero billede-->
+        <section class="hero">
+            <article class="hero-flex">
+                <!--min "std-heading-X / std-button" classes er utility classes, sørger for at style overskrifterne og knapper ens, og er nemme at ændre-->
+                <h1 class="std-heading-1">MEDOVA<span>TEA</span></h1>
+                <h2 class="std-heading-2">same but different</h2>
+                <a href="te.html" class="std-button">køb nu</a>
+            </article>
+            <figure>
+                <img src="img/medova-product-thin.webp" alt="medova product redesign">
+            </figure>
+        </section>
+        <!--section der indeholder min konkurrence/giveaway sektion, den indeholder 2 forskellige taske billeder, da de bliver skfitet mellem desktop og mobile-->
+        <section class="giveaway">
+            <article class="giveaway-flex">
+                <h2 class="std-heading-1">KONKURRENCE</h2>
+                <h3 class="std-heading-2">vind en lækker taske</h3>
+                <a href="#" class="std-button">deltag</a>
+            </article>
+            <figure>
+                <img class="bag-mobile" src="img/plastic-bag-design-mobile.webp" alt="plastic bag medova merchandise">
+                <img class="bag-desktop" src="img/plastic-bag-design-desktop.webp" alt="plastic bag medova merchandise">
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <!--en meget basic header, der indeholder en overskrift og tre billeder i et grid-->
+        <h4>vores forhandlere</h4>
+        <figure>
+            <img src="img/salling.webp" alt="salling logo">
+            <img src="img/coop.webp" alt="coop logo">
+            <img src="img/nemlig.webp" alt="nemlig.com logo">
+        </figure>
+    </footer>
+</body>
+</html>

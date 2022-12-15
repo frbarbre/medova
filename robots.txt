@@ -1,0 +1,49 @@
+#Mit sitemap.xml ligger i vores root sammen med index.html
+#ved at give de passerende crawlers lokationen paa vores sitemap vil de se hele mit site i en fil og indeksere den
+#mit sitemap boer/kan vi uploade til google search console for bedre SEO-maessig effekt
+
+sitemap: http://www.medova.frederikbarbre.dk/sitemap.xml
+
+#user-agent er den crawler som vi skriver en regel for.
+#det kunne vaere googlebot, bing, duckduckgo, etc
+#Jeg bruger en asterisk som gaelder gor samtlige crawlers, ligesom den globale selector i css
+
+user-agent: *
+
+#disallow er et direktiv vi udstikker for de forskellige crawlers
+#et tomt 'disallow: ' direktiv = intet er IKKE tilladt for crawlers. de maa derfor crawle alt
+
+disallow:
+
+#VELKOMMEN TIL DET NYE MEDOVA
+                                                                                
+                                        .                                       
+                                        #                                       
+                           /,          .#           #                           
+                            ##         (#,         #*                           
+               .             ##        ##/       /##                            
+                 (#           ##*      ###      ###           #,                
+                   (##        ,###     ###     ###         ##*                  
+                     (###      (###    ###    ###       ###,                    
+                       *###(    /###   ###   ###     ####                       
+         ,##,             ####.  (###  ###  ###.  (####             ,##         
+              ######,       ##/      #######      ##*       *#####(             
+                   #######( /#*      (#####,      ##..#######(                  
+                        *#####*   *   #####       ######,                       
+                            /#*   *,  ,###   #    ##.                           
+     ,*(######################*   *#   ##(   #    #######################(*.    
+                            /#*   *#/   #   ##    ##.                           
+                       ,######*   *##   *  ,##    #######.                      
+                  (#######. /#*   *##(     ###    ##. ,#######*                 
+             *#####,        ##(///(###////(###////###        *#####.            
+         ##              /####   ####  ###  ###.   ####              .##        
+                       ####.    ####   ###   ###,    /###/                      
+                     ###,      ####    ###    ###.      (##(                    
+                   ##*        /##/     ###     ###         (##                  
+                 #.          .##.      ###      (##           /(                
+                             ##        ##/       .##                            
+                            #(         /#.         #/                           
+                           (           .#           /                           
+                                        #                                       
+                                                                                
+                                                                                
